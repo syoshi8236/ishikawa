@@ -183,7 +183,7 @@ p{
   .left{
     width: 70%;
     background-color: #F4F2F2;
-    border-radius: 10%;
+    border-radius: 100px;
     padding: 50px;
     margin:0 100px;
   }
@@ -364,12 +364,12 @@ p{
   .spot{
     height: 40vw;
     background-color: #30D6FB;
-    border-radius: 10%;
+    border-radius: 50px;
     margin: 10px;
   }
 
   .spot img{
-    border-radius: 10%;
+    border-radius: 50px;
     width: 100%;
 
   }
@@ -470,13 +470,13 @@ p{
   }
   
   h2{
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       line-height: 2rem;
       letter-spacing: 0.8rem;
   }
   
   h3{
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       line-height: 2rem;
       letter-spacing: 0.5rem;
       padding-bottom: 50px;
@@ -490,7 +490,7 @@ p{
   }
   
   p{
-      line-height: 2.5rem;
+      line-height: 2rem;
       letter-spacing: 0.5rem;
   }
 
@@ -515,12 +515,12 @@ p{
 
 
 .blueblock h2{
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .blueblock p{
-  margin-left: 60px;
+  margin-left: 40px;
   font-size: 0.8rem;
 }
 
@@ -528,7 +528,7 @@ p{
   background-image: url(../images/blue-respomsive.jpg);
   color: #fff;
   background-size: contain;
-  height: 1300px;
+  height: 1200px;
 }
 
 .title{
@@ -541,6 +541,10 @@ p{
   margin: 0 auto;
   padding-bottom: 30px;
 }
+.counseling p{
+  font-size: 0.8rem;
+  top: 35%;
+}
 
 
 .left{
@@ -552,7 +556,7 @@ p{
 }
 
 .left h3{
-  width: 360px;
+  width: 310px;
 }
 
 .left p{
@@ -560,7 +564,7 @@ p{
 }
 
 .interview-title{
-  width: 400px;
+  width: 310px;
 }
 
 .interview-left{
@@ -574,8 +578,30 @@ p{
   width: 95%;
 }
 
+.button {
+  width: 250px;
+}
+
 .contact{
   width: auto;
+}
+
+
+.contact h2{
+  top: 25%;
+  left: 25%;
+  -ms-transform: translate(-10%,-25%);
+  -webkit-transform: translate(-10%,-25%);
+  transform: translate(-10%,-25%);
+}
+
+.contact a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .best img{
@@ -585,15 +611,14 @@ p{
 
 .best p{
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .spot{
   height: 600px;
 }
 
-  }    
-
-  
+  }   
 
  
 
