@@ -761,9 +761,9 @@ p{
 .contact h2{
   top: 25%;
   left: 25%;
-  -ms-transform: translate(-10%,-25%);
-  -webkit-transform: translate(-10%,-25%);
-  transform: translate(-10%,-25%);
+  -ms-transform: translate(-10%,-40%);
+  -webkit-transform: translate(-10%,-40%);
+  transform: translate(-10%,-40%);
 }
 
 .contact a{
@@ -789,6 +789,10 @@ p{
   height: 600px;
 }
 
+#last{
+  background-position: 15% 10%;
+}
+
 
 
 .tokyo{
@@ -805,5 +809,4 @@ p{
 
 
   }   
-
 
