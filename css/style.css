@@ -437,6 +437,90 @@ p{
   }
 
 
+
+  /*問い合わせページ*/
+  #top-online{
+    background-image: url(../images/background_online.jpg);
+    background-size: cover;
+    background-position: 60% 10%;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    padding: 50px 0;
+  }
+
+  .wrapper{
+    text-align: center;
+  }
+
+  .wrapper p{
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+
+  .step-wrapper{
+    width: 50%;
+    background-color: #F7F5ED;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+
+  .link{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .tokyo-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .tokyo{
+    width: 30%;
+    text-align: center;
+    background-color: #F7F5ED;
+    padding: 20px 0;
+    border-radius: 50px;
+  }
+
+  /*アプリDLスマホのみ表示*/
+
+@media(min-width:771px){
+  #appreach-box{
+    display: none !important;
+  }
+}
+
+  /*窓口ページ*/
+  #top-counter{
+    background-image: url(../images/background_counter.jpg);
+    background-size: cover;
+    background-position: 60% 10%;
+    padding: 50px 0;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+  }
+
+  .guidance{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .adress{
+    padding-left: 10px;
+  }
+
+
+
+
+
   /*スライダー用*/
 
   #slider-container{
@@ -451,10 +535,97 @@ p{
     font-size: 30px;/*少し大きくする*/
   }
 
+  /*アコーディオン用*/
+  .accordion{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .accordion-content {
+    display: none;
+  }
+
+  .accordion-header {
+    background-color: #FFF;
+    padding: 12px 45px 10px 20px;
+    margin: 10px 0 0;
+    transition: background .3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .accordion-header::before,
+  .accordion-header::after{
+    position:absolute;
+    content:'';
+    top:1px;
+    right:20px;
+    bottom:0;
+    width:12px;
+    height:2px;
+    margin:auto;
+    background:#151E2F;
+  }
+  .accordion-header::after{
+    transform:rotate(-90deg);
+    transition:transform 0.3s;
+  }
+  .accordion-header.active::after{transform:rotate(0deg);}
+  
+  .accordion-content {
+    background-color: #FFF;
+    padding: 12px 20px 10px;
+  }
+  
+  .accordion-header span,
+  .accordion-content span{
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .accordion-header span::before{
+    position: absolute;
+    content:"Q";
+    top: 2px;
+    left: 0;
+    color: #151E2F;
+    font-size: 17px;
+  }
+  
+  
+  .accordion-content span::before{
+      position: absolute;
+    content:"A";
+    top: 3px;
+    left: 0;
+    color: #151E2F;
+    font-size: 17px;
+  }
+  
+  /* アコーディオンホバー */
+  .accordion-header:hover {
+    background-color: #F2F2F2;
+  }
+
+  /*フェードイン*/
+  .fadeIn {
+    transition: 1s;
+    opacity: 0;
+  }
+   
+  .fadeIn.animated {
+    opacity: 1;
+  }
+
+  
+  @keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 
   /*レスポンシブ*/
   @media(max-width:770px){
-    .info-container,.benefit-container,.comment,.best{
+    .info-container,.benefit-container,.comment,.best,.tokyo-wrapper,.guidance{
       flex-direction: column;
     }
 
@@ -618,12 +789,21 @@ p{
   height: 600px;
 }
 
+
+
+.tokyo{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: auto;
+  padding:10px 20px 20px 20px;
+  border-radius: 0%;
+}
+
+.step-wrapper,.accordion,.tokyo{
+  width: 90%;
+}
+
+
   }   
-
- 
-
-
-
-
 
 
