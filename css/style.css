@@ -511,6 +511,7 @@ p{
     display: flex;
     justify-content: center;
     padding: 10px;
+    box-sizing:border-box
   }
 
   .adress{
