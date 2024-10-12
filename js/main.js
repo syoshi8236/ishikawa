@@ -1,3 +1,4 @@
+//スライダー
 $(function () {
   $(".slider").slick({
     arrows: true,
@@ -19,3 +20,37 @@ $(function () {
   });
 
 });
+
+//アコーディオン
+
+$(function(){
+  $('.accordion-header').click(function() { // .accordion-headerをクリックで発火
+    $(this).next().slideToggle();
+    // $(this)...$('.accordion-header')の.next()...次の要素が.slideToggle()...表示と非表示を交互にする
+    $(this).toggleClass('active');
+    // $(this)...$('.accordion-header')に、activeというクラスが追加と削除を交互にする
+  });
+})
+
+
+//フェードイン
+
+
+jQuery(function($) {
+  $(window).on('load scroll', function (){
+   
+    var box = $('.fadeIn');
+    var animated = 'animated';
+    
+    box.each(function(){
+    
+      var boxOffset = $(this).offset().top;
+      var scrollPos = $(window).scrollTop();
+      var wh = $(window).height();
+   
+      if(scrollPos > boxOffset - wh + 100 ){
+        $(this).addClass(animated);
+      }
+    });
+  });
+  })
