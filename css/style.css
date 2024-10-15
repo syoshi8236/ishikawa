@@ -638,14 +638,14 @@ p{
 
 
   /*レスポンシブ*/
-  @media(max-width:770px){
+   @media(max-width:770px){
     .info-container,.benefit-container,.comment,.best,.tokyo-wrapper,.guidance{
       flex-direction: column;
     }
 
     img{
       max-width: 100%;
-      padding: 10px;
+
     }
 
     h1{
@@ -733,6 +733,11 @@ p{
   top: 35%;
 }
 
+.info-container{
+  width: 100%;
+  padding: 20px;
+}
+
 
 .left{
   width: 95%;
@@ -750,6 +755,10 @@ p{
   font-size: 0.9rem;
 }
 
+.benefit-right{
+  margin-bottom: 20px;
+}
+
 .interview-title{
   width: 310px;
 }
@@ -758,7 +767,7 @@ p{
   text-align: center;
 }
 
-.comment{
+.comment,.benefit-container{
   padding: 50px;
   margin: 0 auto;
   padding: 10px;
@@ -813,6 +822,11 @@ p{
   background-position: 15% 10%;
 }
 
+.last-container{
+  margin-left: 20px;
+  width: auto;
+}
+
 
 
 .tokyo{
@@ -829,4 +843,3 @@ p{
 
 
   }   
-
