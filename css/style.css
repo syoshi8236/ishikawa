@@ -176,16 +176,21 @@ p{
 
   .benefit-container{
     display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
   }
 
   .left{
     width: 70%;
     background-color: #F4F2F2;
-    border-radius: 100px;
-    padding: 50px;
-    margin:0 100px;
+    border-radius: 50px;
+    padding: 45px;
+    margin: 30px;
+
   }
 
   .left h3{
@@ -195,13 +200,14 @@ p{
     background-repeat: no-repeat;
     background-size: 100% 10px;
     background-position: bottom;
-    width: 450px;
+    max-width: 450px;
   }
 
   .left span{
     font-size: 1.8rem;
     color: red;
   }
+
 
 
   .benefit-right img {
@@ -268,8 +274,6 @@ p{
   fill: #FCDDFF;
 }
 
-
-
   .interview-title{
     width: 500px;
     height: 70px;
@@ -283,16 +287,18 @@ p{
     margin-bottom: 2%;
   }
 
-
   .comment{
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    padding: 50px;
+    background-color: #FFF;
+    padding: 20px;
     margin: 0 auto;
     width: 80%;
   }
 
+  .interview-left{
+    margin: 50px;
+  }
 
   #info{
     background-color: #F7F5ED;
@@ -301,7 +307,9 @@ p{
   .info-container{
     background-color: #F7F5ED;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .counseling{
@@ -369,9 +377,8 @@ p{
   }
 
   .spot img{
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0; 
     width: 100%;
-
   }
 
   .spot h3{
@@ -395,14 +402,16 @@ p{
     padding-bottom: 100px;
   }
 
-  .last{
-    color: #fff;
-    width: 700px;
-    margin-left: auto;
-    padding: 100px 50px;
+  .last-container{
+    width: 30%;
+    margin-left: 60%;
   }
 
-  .last h2{
+  .end{
+    color: #fff;
+  }
+
+  .end h2{
     line-height: 5rem;
   }
 
@@ -461,7 +470,7 @@ p{
 
 
   .step-wrapper{
-    width: 50%;
+    width: 60%;
     background-color: #F7F5ED;
     margin: 0 auto;
     text-align: center;
@@ -514,6 +523,7 @@ p{
     padding: 10px;
     box-sizing:border-box
   }
+
 
   .adress{
     padding-left: 10px;
@@ -625,6 +635,8 @@ p{
   }
 
 
+
+
   /*レスポンシブ*/
   @media(max-width:770px){
     .info-container,.benefit-container,.comment,.best,.tokyo-wrapper,.guidance{
@@ -685,6 +697,7 @@ p{
 #empathy{
   margin-top: 50px;
 }
+
 
 
 .blueblock h2{
@@ -792,6 +805,10 @@ p{
   height: 600px;
 }
 
+.spot img{
+  padding: 0;
+}
+
 #last{
   background-position: 15% 10%;
 }
@@ -806,7 +823,7 @@ p{
   border-radius: 0%;
 }
 
-.step-wrapper,.accordion,.tokyo{
+.step-wrapper,.accordion{
   width: 90%;
 }
 
