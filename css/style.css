@@ -639,7 +639,7 @@ p{
 
   /*レスポンシブ*/
   @media(max-width:770px){
-    .info-container,.benefit-container,.comment,.best,.tokyo-wrapper,.guidance{
+        .info-container,.benefit-container,.theree,.comment,.best,.tokyo-wrapper,.guidance{
       flex-direction: column;
     }
 
@@ -756,9 +756,9 @@ p{
 }
 
 .theree img{
-  width: 30%;
+  width: 40%;
 }
-
+      
 .benefit-right{
   margin-bottom: 20px;
 }
